@@ -8,12 +8,10 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
             overflow: hidden;
         }
         #pdfViewer {
             width: 100%;
-            height: 100%;
             border: none;
         }
     </style>
@@ -28,10 +26,11 @@
             
             if (docName && /^\d{8}$/.test(docName)) {
                 const pdfViewer = document.getElementById('pdfViewer');
-                pdfViewer.src = `.files/${docName}.pdf`;
+                pdfViewer.src = `files/${docName}.pdf`;
             }
         }
     </script>
 </body>
 </html> 
+
 
